@@ -10,12 +10,21 @@ namespace sudoku_generator
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            int trueSize = 3;
+            int size = trueSize * trueSize;
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            int[,] matrix = new int[size, size];
+
+
+            for (int i = 0; i < size; ++i)
+            {
+                for (int j = 0; j < size; ++j)
+                    Console.Write(matrix[i,j]);
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Hello World!");
+            Console.ReadKey(); 
         }
     }
 }
